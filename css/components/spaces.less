@@ -1,3 +1,7 @@
+@var1: #DFDFDF;
+@var2: #DD2C00;
+@var3: #ffffff;
+
 .spaces__slider .spaces {
   padding: 100px 0 80px 0;
   transition: 0.3s;
@@ -12,7 +16,7 @@
   display: none;
 }
 .spaces__slider-content {
-  background-color: @brand-navy;
+  background-color: var(--navy);
 }
 .spaces__top {
   max-width: 832px;
@@ -24,7 +28,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    color: @brand-gray;
+    color: var(--gray);
     max-width: 452px;
   }
 }
@@ -35,7 +39,7 @@
 .spaces__slider .slick-arrow.slick-prev,
 .gallery .slider__arrows .slick-arrow.slick-prev,
 .reviews .slider__arrows .slick-arrow.slick-prev{
-  background-image: url("./img/spaces/arrow-prev.svg");
+  background-image: url("../../img/spaces/arrow-prev.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,7 +57,7 @@
 .spaces__slider .slick-arrow.slick-next,
 .gallery .slider__arrows .slick-arrow.slick-next,
 .reviews .slider__arrows .slick-arrow.slick-next{
-  background-image: url("./img/spaces/arrow-next.svg");
+  background-image: url("../../img/spaces/arrow-next.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,22 +74,22 @@
 }
 
 .spaces__slider .slick-arrow.slick-prev, .gallery .slider__arrows .slick-arrow.slick-prev, .reviews .slider__arrows .slick-arrow.slick-prev {
-  background-image: url("./img/spaces/arrow-prev.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 53px;
-  height: 26px;
-  position: absolute;
-  right: 115px;
-  top: -62px;
-  left: initial;
+  background-image: url("../../img/spaces/arrow-prev.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 53px;
+	height: 26px;
+	position: absolute;
+	right: 115px;
+	top: -62px;
+	left: initial;
 }
 .slick-prev:before {
 	content: '';
 }
 .spaces__slider .slick-arrow.slick-next, .gallery .slider__arrows .slick-arrow.slick-next, .reviews .slider__arrows .slick-arrow.slick-next {
-  background-image: url("./img/spaces/arrow-next.svg");
+  background-image: url("../../img/spaces/arrow-next.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -102,7 +106,7 @@
 .spaces__slider .slick-dots li button, .gallery__slider .slick-dots li button, .reviews .slider__dots .slick-dots li button {
   width: 40px;
   height: 4px;
-  background: @brand-light-gray;
+  background: @var1;
   margin: 0;
   padding: 0;
   &:before {
@@ -110,7 +114,7 @@
   }
 }
 .spaces__slider .slick-dots li.slick-active button, .gallery__slider .slick-dots li.slick-active button, .reviews .slider__dots .slick-dots li.slick-active button {
-  background-color: @brand-red;
+  background-color: @var2;
 }
 .spaces__slider .slick-list {
   margin: 0 -15px;
@@ -128,7 +132,7 @@
   }
 }
 .spaces__slider-title {
-  color: @brand-black;
+  color: var(--black);
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -136,7 +140,7 @@
 }
 .spaces__slider-block-orange {
   padding: 20px;
-  background-color: @brand-orange;
+  background-color: var(--orange);
   max-width: 72px;
   max-height: 72px;
   position: absolute;
@@ -145,9 +149,9 @@
   z-index: 30;
 }
 .spaces__slider-item-active {
-  background-color: @brand-navy;
+  background-color: var(--navy);
   width: 100%;
-  color: @white;
+  color: @var3;
 }
 .spaces-active {
   &__title {
@@ -173,5 +177,5 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: @brand-gray;
+  color: var(--gray);
 }
