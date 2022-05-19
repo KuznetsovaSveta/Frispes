@@ -1,0 +1,102 @@
+.header {
+  padding: 71px 0 50px 0;
+  font-weight: 700;
+  &-mobile {
+    display: none;
+  }
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__nav-list {
+    display: flex;
+    margin-left: 122px;
+  }
+  &__nav-item {
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__nav-link {
+    transition: 0.2s all linear;
+    &:hover {
+      color: @brand-orange;
+      transition: 0.2s all linear;
+    }
+  }
+  &__account-link {
+    padding: 12px 24px;
+  }
+  &__account-login {
+    transition: 0.2s all linear;
+    &:hover {
+      background-color: @brand-orange;
+      color: @white;
+      box-shadow: 0 4px 16px rgba(255, 87, 34, 0.32);
+      transition: 0.2s all linear;
+    }
+  }
+  &__account-signup {
+    color: @white;
+    box-shadow: 0 4px 16px rgba(255, 87, 34, 0.32);
+    &:hover {
+      background-color: @white;
+      color: @brand-orange;
+      transition: 0.2s all linear;
+      box-shadow: none;
+    }
+  }
+  /*burger menu*/
+  &__burger {
+    width: 30px;
+    height: 17px;
+    position: relative;
+    display: none;
+    cursor: pointer;
+  }
+  &__close {
+    display: none;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    z-index: 100000;
+    cursor: pointer;
+    &-line {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: @brand-navy;
+      position: absolute;
+      top: 50%;
+      &:first-child {
+        transform: translateY(-50%) rotate(45deg);
+      }
+      &:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+      }
+    }
+  }
+}
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: @brand-navy;
+  border-radius: 1px;
+  position: absolute;
+  left: 0 ;
+  &-first {
+    top: 0;
+  }
+  &-second {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &-third {
+    bottom: 0;
+  }
+}

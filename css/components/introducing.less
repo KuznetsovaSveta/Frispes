@@ -1,0 +1,39 @@
+.introducing {
+  padding: 15px 0 12px 0;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33px;
+    &-title {
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 67px;
+      max-width: 667px;
+      color: @brand-navy;
+    }
+    &-description {
+      padding-top: 10px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: @brand-dark-gray;
+      max-width: 382px;
+    }
+  }
+}
+/*Элементы управления слайдером*/
+.carousel-indicators {
+  bottom: 40px;
+  li {
+    width: 16px;
+    height: 4px;
+    background: @white;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .active {
+    width: 40px;
+    background-color: @brand-orange;
+    opacity: 1;
+  }
+}

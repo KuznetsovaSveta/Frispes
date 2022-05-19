@@ -1,0 +1,76 @@
+.footer {
+  padding: 70px 0 102px 0;
+  background: @brand-dark-blue;
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: 255px;
+
+    &-logo {
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+
+    &-description {
+      font-size: 16px;
+      line-height: 26px;
+      color: @ivory;
+      opacity: 0.85;
+      margin-bottom: 24px;
+    }
+
+    &-list {
+      display: flex;
+    }
+
+    &-item {
+      margin-right: 16px;
+      transition: 0.3s all linear;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-link:hover svg {
+      fill: @brand-orange;
+      transition: 0.3s all linear;
+    }
+  }
+
+  &__right {
+    display: flex;
+    color: @white;
+
+    &-list {
+      margin-right: 68px;
+
+      &:last-child {
+        margin-right: 0;
+        max-width: 212px;
+      }
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      opacity: 0.5;
+      margin-bottom: 24px;
+    }
+
+    &-item {
+      line-height: 26px;
+      margin-bottom: 9px;
+      transition: 0.3s all linear;
+      &:hover {
+        color: @brand-orange;
+        transition: 0.3s;
+      }
+    }
+  }
+}

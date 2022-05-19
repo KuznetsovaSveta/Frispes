@@ -1,0 +1,77 @@
+.help {
+  padding: 68px 0 38px 0;
+  text-align: center;
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+    color: @brand-navy;
+    max-width: 578px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-bottom: 34px;
+  }
+  &__card:hover .help__card-content {
+    background-color: @brand-orange;
+    transition: 0.3s all linear;
+  }
+  &__card:hover .help__card-title {
+    color: @white;
+    transition: 0.3s all linear;
+  }
+  &__card:hover .help__card-arrow {
+    background-color: @white;
+    box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
+    transition: 0.3s all linear;
+  }
+  &__card:hover .help__card-svg path {
+    fill: @brand-orange;
+    transition: 0.3s all linear;
+  }
+  &__card-content {
+    padding: 42px 40px 63px 40px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1);
+    transition: 0.3s all linear;
+  }
+  &__card-title {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    color: @black;
+    transition: 0.3s all linear;
+  }
+  &__card-arrow {
+    display: inline-block;
+    background: @brand-orange;
+    padding: 8px 16px;
+    margin-top: -23px;
+  }
+  &__card-svg {
+    transition: 0.3s all linear;
+  }
+  &__link {
+    line-height: 26px;
+    position: relative;
+    margin-left: -40px;
+    &:after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/help/arrow-right.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 32px;
+      height: 32px;
+      right: -40px;
+      top: -6px;
+		}
+		&:hover {
+			color: @brand-orange;
+		}
+	}
+}

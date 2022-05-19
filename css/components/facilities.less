@@ -1,0 +1,73 @@
+.facilities {
+  padding: 81px 0 100px 0;
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+    color: @brand-navy;
+    max-width: 570px;
+    margin-bottom: 56px;
+  }
+  &__tabs-wrap {
+    width: 100%;
+    position: relative;
+  }
+  &__tabs div {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  div {
+    animation: scale 0.7s ease-in-out;
+  }
+  &-mobile {
+    display: none;
+    &__title {
+      color: @brand-black;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      margin-top: 15px;
+    }
+    .carousel-indicators {
+      bottom: 55px;
+    }
+  }
+}
+input {
+  display: none;
+  &:checked + label {
+    color: @white;
+    background: @brand-orange;
+    box-shadow: 0px 4px 16px rgb(255 87 34 / 32%);
+    transition: 0.3s all linear;
+  }
+}
+label {
+  display: block;
+  padding: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: @brand-black;
+  max-width: 293px;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4, #tab5:checked ~ #content5 {
+  display: block;
+}
+//keyframes scale {
+//  transform: scale(0.9);
+//  opacity: 0;
+//}
+//{
+//  transform: scale(1.005);
+//  opacity: 0.5;
+//}
+//{
+//  transform: scale(1);
+//  opacity: 1;
+//}

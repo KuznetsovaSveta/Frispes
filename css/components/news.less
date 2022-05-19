@@ -1,0 +1,120 @@
+.news {
+  background: @ivory;
+  padding: 60px 0 96px 0;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 56px;
+
+    &-title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 51px;
+      color: @brand-navy;
+    }
+
+    &-link {
+      line-height: 26px;
+      position: relative;
+      margin-right: 40px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/help/arrow-right.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 32px;
+        height: 32px;
+        right: -40px;
+        top: -3px;
+      }
+
+      &:hover {
+        color: @brand-orange;
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+    &-item {
+      background-color: @white;
+    }
+
+    &-right {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &-text {
+      padding: 16px;
+    }
+
+    &-title {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &-descr {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: @brand-gray;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+
+    &-author-wrap {
+      display: flex;
+    }
+
+    &-author-img {
+      margin-right: 23px;
+    }
+
+    &-author-name {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &-author-position {
+      font-size: 16px;
+      line-height: 26px;
+      color: @brand-gray;
+    }
+
+    &-author {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: @brand-gray;
+    }
+  }
+}
+
+.double-item {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  .news__content-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    max-width: 315px;
+  }
+}
